@@ -4,11 +4,12 @@ Implement the WordCount algorithm using the SparkDataframe API (pyspark.sql).
 Use the file 'sample.txt' for testing.
 
 Necessary steps:
-1 - load the text file into a dataframe of 2 columns: ["word", "count"]
-2 - Return the top10 most frequent words.
+
+  * load the text file into a dataframe of 2 columns: ["word", "count"]
+  * Return the top10 most frequent words.
 
 
-## HINT:  `pyspark.sql.functions.explode(col)` Returns a new row for each element in the given array or map.
+### HINT:  `pyspark.sql.functions.explode(col)` Returns a new row for each element in the given array or map.
 
 https://spark.apache.org/docs/latest/api/python/pyspark.sql.html?highlight=explode
 
