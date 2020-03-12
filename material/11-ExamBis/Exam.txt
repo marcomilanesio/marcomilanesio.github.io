@@ -13,7 +13,7 @@ Necessary steps:
 https://spark.apache.org/docs/latest/api/python/pyspark.sql.html?highlight=explode
 
 
-REMINDER:
+# REMINDER:
 Plug this at the beginning of the Colab notebook.
 ###
 
@@ -25,3 +25,7 @@ os.environ["JAVA_HOME"] = "/usr/lib/jvm/java-8-openjdk-amd64"
 !pip install pyspark
 ###
 
+
+To upload the file: 
+> from google.colab import files
+> files.upload()  # and navigate to your 'sample.txt'
