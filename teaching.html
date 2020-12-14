@@ -58,7 +58,7 @@ Finally we will cover some of the theory and the architecture of distributed com
         <h2>Final exam</h2>
         <ul>
             <li> TP 1 (17 nov)</li>
-            <li> TP 2 (15 dec + 1 week)</li>
+            <li> TP 2 (5 jan + 1 week)</li>
         </ul>
         </div>
         
@@ -66,7 +66,7 @@ Finally we will cover some of the theory and the architecture of distributed com
         <div id="content">
         <h2>Preamble to the Colab notebook (Spark only)</h2>
         Insert this at the beginning of every Colab notebook.
-        <hr>
+        <br/><br/>
         <code>
         !apt-get install openjdk-8-jdk-headless -qq > /dev/null <br>
         import os <br>
@@ -75,7 +75,25 @@ Finally we will cover some of the theory and the architecture of distributed com
         !java -version <br>
         !pip install pyspark
         </code>
+        <br/><br/>
+        <hr><br/>
+        <h2>To install Spark on your local machine</h2>
         
+        Download the Spark tar.gz file from <a href="https://spark.apache.org/">here</a>. <br/>
+        Unpack it to a folder of your choice.
+        Then: <br/>
+        <br/>
+        <code>
+        pip3 install pyspark <br>
+        </code>
+        <br/>        
+        Then, make sure the following environment variables are set in your .profile file (change them following your system conf) <br/>
+        <br/>
+        <code>
+        export JAVA_HOME=/usr/lib/jvm/jdk-14.0.2<br>
+        export PYSPARK_PYTHON=/usr/bin/python3 <br>
+        export PYSPARK_DRIVER_PYTHON=/usr/bin/python3<br>
+        </code>
         
         </div>
         
@@ -225,14 +243,22 @@ Finally we will cover some of the theory and the architecture of distributed com
                 <td> <a href="../material/7/spark.ipynb"> word count </a> </td>
                 <td> </td>
              </tr>
-         <!-- <tr bgcolor="#E2FFB3">  
-                <td> </td>
+            <tr bgcolor="#D0FBFD">  
+                <td> Dec 15, 2020 </td>
                 <td> Spark Dataframes </td>
-                <td> <a href="../material/7/dataframe.pdf"> Spark II </a> </td>
-                <td> </td>
-                <td> </td>
+                <td> <a href="../material/8/dataframe.pdf"> Spark II </a> </td>
+                <td> <a href="../material/8/df.ipynb"> dataframes </a></td>
+                <td> <a href="../material/8/2015-summary.csv"> csv </a></td>
              </tr>
-         -->
+             <tr bgcolor="#D0FBFD">  
+                <td> </td>
+                <td> Spark ML </td>
+                <td> </td>
+                <td> <a href="../material/8/salary.ipynb"> salary </a></td>
+                <td> <a href="../material/8/adult.csv.gz"> gzip </a></td>
+             </tr>
+         
+         
         </table>
         </div>
     </div>    
