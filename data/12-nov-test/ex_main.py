@@ -99,7 +99,7 @@ def ex3(arr):
 
 def ex4(arr):
     """
-    Fill up so that the tests in test_exercises.py pass.
+    Fill up so that the tests in test_main.py pass.
     @param arr: list
     @return list 
     """
@@ -110,7 +110,7 @@ def ex4(arr):
 
 def ex5(arr):
     """
-    Fill up so that the tests in test_exercises.py pass.
+    Fill up so that the tests in test_main.py pass.
     @param arr: list
     @return list 
     """
